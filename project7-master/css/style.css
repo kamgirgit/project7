@@ -1,5 +1,7 @@
 *{
 	box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
 }
 body {
     margin: 0;
@@ -268,14 +270,61 @@ ul.navbar-nav li a{
     transition: 0.5s;
     line-height: 0;
     margin-top: 0px;
-}
-#services .box .icon i:before {
-    background: linear-gradient(45deg, #E91E63 0%, #405ece 100%);
-    background: -ms-linear-gradient(45deg,#E91E63 0%, #405ece 100%);
+    color: -moz-linear-gradient(359deg, rgba(233,30,99,1) 0%, rgba(87,85,190,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(233,30,99,1)), color-stop(100%, rgba(87,85,190,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(359deg, rgba(233,30,99,1) 0%, rgba(87,85,190,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(359deg, rgba(233,30,99,1) 0%, rgba(87,85,190,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(359deg, rgba(233,30,99,1) 0%, rgba(87,85,190,1) 100%) !important; /* ie10+ */
+background: linear-gradient(91deg, rgba(233,30,99,1) 0%, rgba(87,85,190,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', endColorstr='#5755be',GradientType=1 ); /* ie6-9 */
+ /*   background: -webkit-gradient(linear, left top, left bottom, from(#ff5db1), to(#ef017c));*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    display: initial;
+}
+.fa-gradient {
+    /* old browsers */
+    background: red;
+    /* IE10+ */
+    background: -ms-linear-gradient(top right, red 0%, brown 100%);
+    /* Mozilla Firefox */
+    background: -moz-linear-gradient(top right, red 0%, brown 100%);
+    /* Opera */
+    background: -o-linear-gradient(top right, red 0%, brown 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(0, red), color-stop(100, brown));
+    /* Webkit (Chrome 11+) */
+    background: -webkit-linear-gradient(top right, red 0%, brown 100%);
+    /* W3C Markup */
+    background: linear-gradient(top right, red 0%, brown 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='red', endColorstr='brown00', GradientType=1);
+    /*background: linear-gradient(linear, left bottom, right top, from(brown), to(red));*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .fa-gradient {
+        color: red;
+        background: transparent;
+    }
+}
+/*}*/
+#services .box .icon i:before {
+   /* background: linear-gradient(45deg, #E91E63 0%, #405ece 100%);
+    background: -ms-linear-gradient(45deg,#E91E63 0%, #405ece 100%);
+   
     -ms-background-clip:text;
     -ms-text-fill-color:transparent;
+*/
+     /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+
+
 }
 #services .box h4 {
     margin-left: 100px;
@@ -605,7 +654,7 @@ ul.navbar-nav li a{
     margin-bottom: 15px;
     padding: 0;
     margin-top: 0;
-    margin-left: 27px;
+    /*margin-left: 27px;*/
     font-size: 14px;
 }
 #contact .contact-info a {
@@ -722,7 +771,7 @@ html{
     margin-bottom: 15px;
     padding: 0;
     margin-top: 0;
-    margin-left: 32px;
+    /*margin-left: 32px;*/
     font-size: 12px;
     }
     #contact .form {
@@ -758,6 +807,10 @@ html{
    }
    #contact {
     padding: 30px 0;
+    }
+    .myslider{
+       max-width: 90%;
+       margin: 0 auto !important;
     }
 }
 
