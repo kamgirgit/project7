@@ -831,6 +831,10 @@ html{
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
    /* IE10+ specific styles go here */  
    /*media screen*/
+   body{
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+}
 #portfolio {
     background: linear-gradient(45deg, #E91E63 -132%, #0c2e8a 100%);
     color: rgba(223, 229, 220, 1);
@@ -849,7 +853,7 @@ html{
 }
 #services .box .icon i:before {
 
-    background: -ms-linear-gradient(45deg,#E91E63 0%, #405ece 100%);
+    background-image: -ms-linear-gradient(45deg,#E91E63 0%, #405ece 100%);
     -ms-background-clip:text;
     -ms-text-fill-color:transparent;
 }
