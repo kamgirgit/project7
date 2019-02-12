@@ -70,7 +70,7 @@ body {
     transition: all 0.5s;
     z-index: 997;
     background: #fff;
-    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+    /*box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);*/
     
 }
 #header-sticky .header-logo h1{
@@ -82,7 +82,7 @@ body {
     font-weight: 700;
 }
 #header-sticky .header-logo{
-    margin-left: 6%;
+    margin-left: 8.8%;
 }
 
 #header-sticky .header-logo h1 a{
@@ -116,7 +116,6 @@ body {
 
 .header1 {
   background-color: #fff;
-  margin-right: 12%;
   width: 100%;
   z-index: 9999999;
 }
@@ -154,7 +153,7 @@ body {
 .header1 .menu {
   clear: both;
   max-height: 0;
-  margin-right: 4%;
+  margin-right: 8%;
   transition: max-height .2s ease-out;
 }
 
@@ -757,6 +756,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', end
     border-radius: 0;
     box-shadow: none;
     font-size: 15px;
+    border: 1px solid;
 }
 #contact .contact-info i {
     font-size: 24px;
@@ -957,6 +957,9 @@ html{
        max-width: 90%;
        margin: 0 auto !important;
     }
+    .slick-slide {
+    width: 120px !important;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -1071,4 +1074,19 @@ html{
     margin: 0 auto;
     text-align: center;
     }
+    #services {
+     padding: 0px 0 0 0; 
+     }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .slick-slide {
+    width: 100px !important;
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 811px){
+    .header1 li a {
+    padding: 1px 4px;
+   }
 }
